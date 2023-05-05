@@ -573,6 +573,10 @@ background-color: var(--accent-color-ocean);
 	color: var(--light-color-cloud);
 }
 
+.footer-socials-container {
+	margin-right: 80px;
+}
+
 .footer-title {
 text-align: left;
 
@@ -612,6 +616,24 @@ color: var(--secondary-color-white);
 	fill: currentColor;
 }
 
+.subscription-btn {
+	display: flex;
+	align-items: center;
+	padding: 8px 24px;
+	gap: 16px;
+	height: 40px;
+
+	background-color: var(--primaru-btn-color-iis);
+	border: 1px ;
+	border-radius: 4px;
+	color: var(--secondary-color-white);
+}
+
+.subscription-icon {
+	/* margin-left: 16px; */
+	fill: currentColor;
+}
+
 .bacdroup {
 	position: fixed;
 	top: 0;
@@ -632,6 +654,7 @@ color: var(--secondary-color-white);
 	transition-delay: 400ms ;
 }
 
+/* Modal */
 .modal {
 	position: absolute;
 	top: 50%;
