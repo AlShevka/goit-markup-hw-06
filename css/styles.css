@@ -737,9 +737,6 @@ color: var(--secondary-color-white);
 	top: 24px;
 	right: 24px;
 
-	/* display: inline-block;
-	margin-bottom: 24px; */
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -880,15 +877,13 @@ color: var(--secondary-color-white);
 	left: 3px;
 
 	transform: translateY(-50%);
+
+	cursor: pointer;
+
+	opacity: 0;
 }
 
-.modal-agreement-icon-checked {
-	opacity: 1;
-	transition: var(--animation);
-	
-}
-
-.modal-agreement-input:checked + .modal-agreement-icon:checked > .modal-agreement-icon-checked { 
+.modal-agreement-input:checked + .modal-agreement-icon {
 	opacity: 1;
 }
 
