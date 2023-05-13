@@ -574,7 +574,7 @@ background-color: var(--accent-color-ocean);
 }
 
 .footer-socials-container {
-	margin-right: 80px;
+	margin-right: auto;
 }
 
 .footer-title {
@@ -619,10 +619,6 @@ color: var(--secondary-color-white);
 .subscription-form {
 	display: flex;
 	gap: 24px;
-}
-
-.subscription-label {
-	position: relative;
 }
 
 .subscription-input {
@@ -737,7 +733,9 @@ color: var(--secondary-color-white);
 	top: 24px;
 	right: 24px;
 
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	width: 24px;
 	height: 24px;
@@ -770,7 +768,6 @@ color: var(--secondary-color-white);
 	display: block;
 	margin-bottom: 4px;
 
-	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
@@ -827,7 +824,7 @@ color: var(--secondary-color-white);
 
 	transition: border var(--animation) border-radius var(--animation);
 
-	/* resize: none; */
+	resize: none;
 }
 
 .modal-messange::placeholder {
