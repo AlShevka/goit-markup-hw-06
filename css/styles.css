@@ -789,11 +789,16 @@ color: var(--secondary-color-white);
 	border-radius: 4px;
 
 	transition: border var(--animation) border-radius var(--animation);
+
+	outline: 1px solid transparent;
+	outline-offset: -1px;
 }
 
 .modal-input:focus {
-	border: 1px solid var(--primaru-btn-color-iis);
-	border-radius: 4px;
+	outline-color: var(--primaru-btn-color-iis);
+
+	/* border: 1px solid var(--primaru-btn-color-iis);
+	border-radius: 4px; */
 }
 
 .modal-contact-icon {
@@ -825,6 +830,9 @@ color: var(--secondary-color-white);
 	transition: border var(--animation) border-radius var(--animation);
 
 	resize: none;
+
+	outline: 1px solid transparent;
+	outline-offset: -1px;
 }
 
 .modal-messange::placeholder {
@@ -836,8 +844,10 @@ color: var(--secondary-color-white);
 }
 
 .modal-messange:focus {
-	border: 1px solid var(--primaru-btn-color-iis);
-	border-radius: 4px;
+	outline-color: var(--primaru-btn-color-iis);
+
+	/* border: 1px solid var(--primaru-btn-color-iis);
+	border-radius: 4px; */
 }
 
 .modal-agreement {
