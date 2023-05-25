@@ -191,6 +191,30 @@ background-color: var(--accent-color-ocean);
 
 /* Hero */	
 
+.hero-container {
+/* Phone style & > */
+	min-width: 320px;
+	max-width: 428px;
+	margin-right: auto;
+	margin-left: auto;
+
+	outline: 2px solid red;
+}
+/* Tablet style & > */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+	max-width: 768px;
+  }
+}
+
+/* Desktop style  */
+@media only screen and (min-width: 1440px) {
+   .hero-container {
+	max-width: 1158px;
+  }
+}
+
+
 .hero {
 	max-width: 1440px;
 	margin-left: auto;
@@ -207,18 +231,41 @@ background-color: var(--accent-color-ocean);
 }
 
 .hero-title {
-	max-width: 496px;
+	/* Phone style & > */
+	max-width: 320px;
 	margin: 0 auto;
 	text-align: center;
-	margin-bottom: 48px;
+	margin-bottom: 72px;
+
 	font-weight: 700;
-	font-size: 56px;
-	line-height: 1.07;
+	font-size: 36px;
+	line-height: 1.11;
 	letter-spacing: 0.02em;
 	color: var(--secondary-color-white);
 }
 
+	/* Tablet style & > */
+@media only screen and (min-width: 768px) {
+  .hero-title {
+	max-width: 496px;
+	margin-bottom: 36px;
+	
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+  }
+}
+
+	/* Desktop style  */
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+	margin-bottom: 48px;
+  }
+}
+
+
 .hero-btn {
+	/* Phone style & > */
 	display: block;
 	height: 56px;
 	min-width: 169px;
@@ -241,6 +288,7 @@ background-color: var(--accent-color-ocean);
 	transition: color var(--animation);
 	
 }
+
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -302,8 +350,22 @@ background-color: var(--accent-color-ocean);
 }
 
 /* Section 2 */
+
 .works-section {
 	padding-bottom: 120px;
+}
+
+.works-container {
+	/* Phone styles & Tablet */
+	display: none;
+
+	outline: 2px solid red;
+}
+
+@media only screen and (min-width: 1440px) {
+  .works-container {
+	display: block;
+  }
 }
 
 .works-list {
@@ -322,10 +384,44 @@ background-color: var(--accent-color-ocean);
 	background-color: var(--light-color-cloud);
 }
 
-.team-list {
-	display: flex;
-	gap: 24px;
+.team-container {
+	/* Phone style & > */
+	min-width: 320px;
+	max-width: 428px;
+
+	outline: 2px solid red;
 }
+
+	/* Tablet style & > */
+@media only screen and (min-width: 768px) {
+  .team-container {
+	max-width: 768px;
+  }
+}
+
+	/* Desktop style  */
+@media only screen and (min-width: 1440px) {
+  .team-container {
+	max-width: 1158px;
+  }
+}
+
+
+.team-list {
+	/* Phone style & > */
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+}
+
+/* Tablet style  */
+@media only screen and (min-width: 768px) {
+  .team-list {
+	flex-direction: row;
+	gap: 24px;
+  }
+}
+
 
 .team-item{
 	width: calc((100% - 72px) / 4);
